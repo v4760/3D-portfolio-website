@@ -25,10 +25,16 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import wasabi from "./company/wasabi.png";
+import df from "./company/df.jpeg";
+import entellisoft from "./company/entellisoft.jpeg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import readmission from "./readmission.png";
+import moodjournal from "./moodjournal.jpeg";
+import dbmigration from "./dbmigration.png";
 
 export {
   logo,
@@ -59,4 +65,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  wasabi,
+  df,
+  entellisoft,
+  readmission,
+  moodjournal,
+  dbmigration,
 };
