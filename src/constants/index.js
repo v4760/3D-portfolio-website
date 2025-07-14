@@ -23,6 +23,12 @@ import {
     jobit,
     tripguide,
     threejs,
+    wasabi,
+    entellisoft,
+    df,
+    readmission,
+    moodjournal,
+    dbmigration,
   } from "../assets";
   
   export const navLinks = [
@@ -42,20 +48,16 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Data Engineer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "DevOps Engineer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "MLOps Engineer", 
       icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
     },
   ];
   
@@ -116,55 +118,44 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Software Engineer Intern",
+      company_name: "Wasabi Technologies",
+      icon: wasabi,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "May 2024 - Dec 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Integrated Terragrunt to create DRY Terraform infrastructure code, improving resource definition efficiency by 62.5%.",
+        "Enhanced an internal deployment tool using Golang and added Slack integration for real-time deployment updates.",
+        "Automated Kubernetes-based test cluster provisioning using Ansible and Proxmox VMs.",
+        "Built fuzzy filtering into a CLI tool using Bubble Tea to improve usability for multi-column table data.",
+        "Maintained CI/CD stability with GitHub Actions, led sprint-based support teams, and documented image promotion architecture.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Data Engineer",
+      company_name: "Decision Foundry",
+      icon: df,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Nov 2021 - Aug 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Built a Natural Language Generation (NLG) model in Python to cluster and analyze revenue data across 30+ markets.",
+        "Created reusable data wrangling templates in DBT and managed data pipelines using Funnel.io and Spectrum.",
+        "Transformed and visualized data using Tableau Prep, Tableau Desktop, and Tableau Server.",
+        "Performed QA on AWS Redshift data using SQL Server to ensure data accuracy and reliability.",
+        "Managed data operations for 50+ advertisers, driving insights for a $20M ad budget.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Data Analyst",
+      company_name: "Entellisoft Technologies",
+      icon: entellisoft,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Aug 2018 - Oct 2020",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Built custom Python API connectors to integrate diverse data sources into Datorama.",
+        "Improved sentiment prediction accuracy by 20% through analysis of ad reactions using Datorama’s models.",
+        "Developed dashboards in Datorama and Tableau to track ad KPIs, reducing data analysis time by 25%.",
+        "Managed and optimized analytics tools like Google Ads, Google Analytics, and Amazon Campaign Manager for better user tracking.",
       ],
     },
   ];
@@ -198,67 +189,79 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Readmission Prediction (MLOps)",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Developed MLOps pipeline for predicting hospital readmission of diabetic patients using FastAPI, Docker, and Apache Airflow. Deployed scalable, secure infrastructure on GCP with automated CI/CD using GitHub Actions. Integrated real-time model inference and monitoring via a full-stack application. Ensured model interpretability, error logging, and data pipeline reliability.",
       tags: [
+        {
+          name: "gcp",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "docker",
+          color: "green-text-gradient",
+        },
+        {
+          name: "airflow",
+          color: "red-text-gradient",
+        },
+        {
+          name: "mlflow",
+          color: "pink-text-gradient",
+        },
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "fastapi",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: readmission,
+      source_code_link: "https://github.com/v4760/Readmisssion-of-Hyperglycemia-Patient",
+    },
+    {
+      name: "Mood Journal",
+      description:
+        "Built a full-stack web app using React, Tailwind CSS, Node.js, and Prisma to let users log daily thoughts and moods. Implemented JWT-based authentication with protected routes and CRUD operations for journal entries. Integrated a weather API to suggest mood-based prompts. Deployed frontend to Vercel and backend to Render, with PostgreSQL database on Render.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
         },
         {
           name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "nodejs",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: moodjournal,
+      source_code_link: "https://github.com/v4760/moodjournal",
     },
     {
-      name: "Trip Guide",
+      name: "Database Migration Tool",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Developed a Python-based data migration tool using Pandas to efficiently transfer file-based data from MySQL to PostgreSQL and integrated comprehensive validation procedures, including schema verification and record count reconciliation, to ensure data integrity throughout the migration process",
       tags: [
         {
-          name: "nextjs",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "postgresql",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "mysql",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: dbmigration,
+      source_code_link: "https://github.com/v4760/Files_To_Database_Migration",
     },
   ];
   
