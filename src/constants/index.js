@@ -146,16 +146,16 @@ import {
       ],
     },
     {
-      title: "Data Analyst",
+      title: "Software Engineer",
       company_name: "Entellisoft Technologies",
       icon: entellisoft,
       iconBg: "#383E56",
       date: "Aug 2018 - Oct 2020",
       points: [
-        "Built custom Python API connectors to integrate diverse data sources into Datorama.",
-        "Improved sentiment prediction accuracy by 20% through analysis of ad reactions using Datorama’s models.",
-        "Developed dashboards in Datorama and Tableau to track ad KPIs, reducing data analysis time by 25%.",
-        "Managed and optimized analytics tools like Google Ads, Google Analytics, and Amazon Campaign Manager for better user tracking.",
+        "Implemented an event-driven architecture, leveraging AWS Lambda to automatically trigger workflows based on specific actions.",
+        "Integrated a CI/CD pipeline with Jenkins, automating security scans using tools like Sysdig. This solution streamlined operations, enhanced data security, and improved the overall development and deployment process.",
+        "Implemented CI/CD pipelines with aim of automating the build, test and deployment processes, ensuring smooth and rapid delivery of updates to the metadata management system.",
+        "Applied Test Driven Development practices to ensure robust and reliable code. Developed comprehensive unit and integration tests using unittest(Python), leading to high code coverage and quality.",
       ],
     },
   ];
